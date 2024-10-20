@@ -1,0 +1,36 @@
+@@ -115,7 +115,25 @@
+         return input.substring(start, pos);
+     }
+ 
++    String consumeLetterThenDigitSequence() {
++        int start = pos;
++        while (!isEmpty()) {
++            char c = input.charAt(pos);
++            if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
++                pos++;
++            else
++                break;
++        }
++        while (!isEmpty()) {
++            char c = input.charAt(pos);
++            if (c >= '0' && c <= '9')
++                pos++;
++            else
++                break;
++        }
+ 
++        return input.substring(start, pos);
++    }
+ 
+     String consumeHexSequence() {
+         int start = pos;
+diff -ur /home/kulindu.20/analyze_defects4J/tmp/Jsoup/23b/buggy/src/main/java/org/jsoup/parser/Tokeniser.java /home/kulindu.20/analyze_defects4J/tmp/Jsoup/23b/fixed/src/main/java/org/jsoup/parser/Tokeniser.java
+@@ -132,7 +132,7 @@
+             }
+         } else { // named
+             // get as many letters as possible, and look for matching entities. unconsume backwards till a match is found
+-            String nameRef = reader.consumeLetterSequence();
++            String nameRef = reader.consumeLetterThenDigitSequence();
+             String origNameRef = new String(nameRef); // for error reporting. nameRef gets chomped looking for matches
+             boolean looksLegit = reader.matches(';');
+             boolean found = false;

@@ -1,0 +1,10 @@
+@@ -149,7 +149,8 @@
+      * @return int length
+      */
+     public int getLength() {
+-        return ValueUtils.getLength(getBaseValue());
++        Object baseValue = getBaseValue();
++        return baseValue == null ? 1 : ValueUtils.getLength(baseValue);
+     }
+ 
+     /**

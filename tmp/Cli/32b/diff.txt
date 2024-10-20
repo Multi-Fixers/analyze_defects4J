@@ -1,0 +1,13 @@
+@@ -934,11 +934,7 @@
+         
+         // if we didn't find one, simply chop at startPos+width
+         pos = startPos + width;
+-        while ((pos <= text.length()) && ((c = text.charAt(pos)) != ' ')
+-               && (c != '\n') && (c != '\r'))
+-        {
+-            ++pos;
+-        }        
++        
+         return pos == text.length() ? -1 : pos;
+     }
+ 

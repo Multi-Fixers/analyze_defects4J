@@ -1,0 +1,9 @@
+@@ -421,6 +421,8 @@
+                     return false;
+                 }
+ 
++                if (end >= input.length)
++                    return false;
+ 
+                 while (i < end) {
+                     i++;

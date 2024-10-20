@@ -1,0 +1,11 @@
+@@ -115,7 +115,9 @@
+         if(this.runningState != STATE_RUNNING && this.runningState != STATE_SUSPENDED) {
+             throw new IllegalStateException("Stopwatch is not running. ");
+         }
++        if(this.runningState == STATE_RUNNING) {
+             stopTime = System.currentTimeMillis();
++        }
+         this.runningState = STATE_STOPPED;
+     }
+ 
+Only in /home/kulindu.20/analyze_defects4J/tmp/Lang/55b/fixed: xdocs

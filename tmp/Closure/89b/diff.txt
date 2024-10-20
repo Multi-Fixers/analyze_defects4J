@@ -1,0 +1,20 @@
+@@ -481,6 +481,9 @@
+     Node greatGramps = gramps.getParent();
+     Node greatGreatGramps = greatGramps.getParent();
+ 
++    if (rvalue != null && rvalue.getType() == Token.FUNCTION) {
++      checkForHosedThisReferences(rvalue, refName.docInfo, refName);
++    }
+ 
+     // Create the new alias node.
+     Node nameNode = NodeUtil.newName(
+diff -ur /home/kulindu.20/analyze_defects4J/tmp/Closure/89b/buggy/src/com/google/javascript/jscomp/GlobalNamespace.java /home/kulindu.20/analyze_defects4J/tmp/Closure/89b/fixed/src/com/google/javascript/jscomp/GlobalNamespace.java
+@@ -917,7 +917,7 @@
+       }
+ 
+       // If this is aliased, then its properties can't be collapsed either.
+-      if (type != Type.FUNCTION && aliasingGets > 0) {
++      if (aliasingGets > 0) {
+         return false;
+       }
+ 

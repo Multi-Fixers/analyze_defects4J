@@ -1,0 +1,9 @@
+@@ -679,6 +679,7 @@
+                         (str.charAt(1) == 'E' || str.charAt(1) == 'e') &&
+                         (str.charAt(2) == 'S' || str.charAt(2) == 's');
+                 }
++                return false;
+             }
+             case 4: {
+                 char ch = str.charAt(0);
+Only in /home/kulindu.20/analyze_defects4J/tmp/Lang/51b/fixed: xdocs

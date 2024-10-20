@@ -1,0 +1,67 @@
+@@ -95,11 +95,11 @@
+ 
+     private static final Map<NameType, Lang> Langs = new EnumMap<NameType, Lang>(NameType.class);
+ 
+-    private static final String LANGUAGE_RULES_RN = "org/apache/commons/codec/language/bm/lang.txt";
++    private static final String LANGUAGE_RULES_RN = "org/apache/commons/codec/language/bm/%s_lang.txt";
+ 
+     static {
+         for (final NameType s : NameType.values()) {
+-            Langs.put(s, loadFromResource(LANGUAGE_RULES_RN, Languages.getInstance(s)));
++            Langs.put(s, loadFromResource(String.format(LANGUAGE_RULES_RN, s.getName()), Languages.getInstance(s)));
+         }
+     }
+ 
+diff -ur /home/kulindu.20/analyze_defects4J/tmp/Codec/14b/buggy/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java /home/kulindu.20/analyze_defects4J/tmp/Codec/14b/fixed/src/main/java/org/apache/commons/codec/language/bm/PhoneticEngine.java
+@@ -28,7 +28,7 @@
+ import java.util.Locale;
+ import java.util.Map;
+ import java.util.Set;
+-import java.util.TreeSet;
++import java.util.TreeMap;
+ 
+ import org.apache.commons.codec.language.bm.Languages.LanguageSet;
+ import org.apache.commons.codec.language.bm.Rule.Phoneme;
+@@ -335,7 +335,8 @@
+             return phonemeBuilder;
+         }
+ 
+-        final Set<Rule.Phoneme> phonemes = new TreeSet<Rule.Phoneme>(Rule.Phoneme.COMPARATOR);
++        final Map<Rule.Phoneme, Rule.Phoneme> phonemes =
++            new TreeMap<Rule.Phoneme, Rule.Phoneme>(Rule.Phoneme.COMPARATOR);
+ 
+         for (final Rule.Phoneme phoneme : phonemeBuilder.getPhonemes()) {
+             PhonemeBuilder subBuilder = PhonemeBuilder.empty(phoneme.getLanguages());
+@@ -358,10 +359,18 @@
+             // the phonemes map orders the phonemes only based on their text, but ignores the language set
+             // when adding new phonemes, check for equal phonemes and merge their language set, otherwise
+             // phonemes with the same text but different language set get lost
+-            phonemes.addAll(subBuilder.getPhonemes());
++            for (final Rule.Phoneme newPhoneme : subBuilder.getPhonemes()) {
++                if (phonemes.containsKey(newPhoneme)) {
++                    final Rule.Phoneme oldPhoneme = phonemes.remove(newPhoneme);
++                    final Rule.Phoneme mergedPhoneme = oldPhoneme.mergeWithLanguage(newPhoneme.getLanguages());
++                    phonemes.put(mergedPhoneme, mergedPhoneme);
++                } else {
++                    phonemes.put(newPhoneme, newPhoneme);
++                }
++            }
+         }
+ 
+-        return new PhonemeBuilder(phonemes);
++        return new PhonemeBuilder(phonemes.keySet());
+     }
+ 
+     /**
+diff -ur /home/kulindu.20/analyze_defects4J/tmp/Codec/14b/buggy/src/main/java/org/apache/commons/codec/language/bm/Rule.java /home/kulindu.20/analyze_defects4J/tmp/Codec/14b/fixed/src/main/java/org/apache/commons/codec/language/bm/Rule.java
+@@ -155,6 +155,9 @@
+          * @param lang the language set to merge
+          * @return a new Phoneme
+          */
++        public Phoneme mergeWithLanguage(final LanguageSet lang) {
++          return new Phoneme(this.phonemeText.toString(), this.languages.merge(lang));
++        }
+ 
+         @Override
+         public String toString() {
+diff -ur /home/kulindu.20/analyze_defects4J/tmp/Codec/14b/buggy/src/main/resources/org/apache/commons/codec/language/bm/ash_lang.txt /home/kulindu.20/analyze_defects4J/tmp/Codec/14b/fixed/src/main/resources/org/apache/commons/codec/language/bm/ash_lang.txt

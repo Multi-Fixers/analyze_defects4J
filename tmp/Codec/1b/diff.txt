@@ -1,0 +1,29 @@
+@@ -56,7 +56,7 @@
+         }
+ 
+         // 1. Convert to lowercase
+-        txt = txt.toLowerCase();
++        txt = txt.toLowerCase(java.util.Locale.ENGLISH);
+ 
+         // 2. Remove anything not A-Z
+         txt = txt.replaceAll("[^a-z]", "");
+diff -ur /home/kulindu.20/analyze_defects4J/tmp/Codec/1b/buggy/src/java/org/apache/commons/codec/language/Metaphone.java /home/kulindu.20/analyze_defects4J/tmp/Codec/1b/fixed/src/java/org/apache/commons/codec/language/Metaphone.java
+@@ -85,7 +85,7 @@
+         }
+         // single character is itself
+         if (txt.length() == 1) {
+-            return txt.toUpperCase() ;
++            return txt.toUpperCase(java.util.Locale.ENGLISH) ;
+         }
+       
+         char[] inwd = txt.toUpperCase(java.util.Locale.ENGLISH).toCharArray() ;
+diff -ur /home/kulindu.20/analyze_defects4J/tmp/Codec/1b/buggy/src/java/org/apache/commons/codec/language/SoundexUtils.java /home/kulindu.20/analyze_defects4J/tmp/Codec/1b/fixed/src/java/org/apache/commons/codec/language/SoundexUtils.java
+@@ -50,7 +50,7 @@
+             }
+         }
+         if (count == len) {
+-            return str.toUpperCase();
++            return str.toUpperCase(java.util.Locale.ENGLISH);
+         }
+         return new String(chars, 0, count).toUpperCase(java.util.Locale.ENGLISH);
+     }

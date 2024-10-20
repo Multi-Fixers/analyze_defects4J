@@ -1,0 +1,23 @@
+@@ -1415,6 +1415,10 @@
+         int fractLen = 0;
+         // And then see if we get other parts
+         if (c == '.') { // yes, fraction
++            if (outPtr >= outBuf.length) {
++                outBuf = _textBuffer.finishCurrentSegment();
++                outPtr = 0;
++            }
+             outBuf[outPtr++] = c;
+ 
+             fract_loop:
+diff -ur /home/kulindu.20/analyze_defects4J/tmp/JacksonCore/19b/buggy/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java /home/kulindu.20/analyze_defects4J/tmp/JacksonCore/19b/fixed/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+@@ -1541,6 +1541,10 @@
+ 
+         // And then see if we get other parts
+         if (c == INT_PERIOD) { // yes, fraction
++            if (outPtr >= outBuf.length) {
++                outBuf = _textBuffer.finishCurrentSegment();
++                outPtr = 0;
++            }
+             outBuf[outPtr++] = (char) c;
+ 
+             fract_loop:

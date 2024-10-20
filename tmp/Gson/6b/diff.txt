@@ -1,0 +1,10 @@
+@@ -64,7 +64,9 @@
+       throw new IllegalArgumentException(
+           "@JsonAdapter value must be TypeAdapter or TypeAdapterFactory reference.");
+     }
++    if (typeAdapter != null) {
+       typeAdapter = typeAdapter.nullSafe();
++    }
+     return typeAdapter;
+   }
+ }

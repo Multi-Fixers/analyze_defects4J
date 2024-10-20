@@ -1,0 +1,19 @@
+@@ -69,7 +69,7 @@
+     private int numberOfArgs = UNINITIALIZED;
+ 
+     /** the type of this Option */
+-    private Class type;
++    private Class type = String.class;
+ 
+     /** the list of argument values **/
+     private List values = new ArrayList();
+diff -ur /home/kulindu.20/analyze_defects4J/tmp/Cli/34b/buggy/src/main/java/org/apache/commons/cli/OptionBuilder.java /home/kulindu.20/analyze_defects4J/tmp/Cli/34b/fixed/src/main/java/org/apache/commons/cli/OptionBuilder.java
+@@ -81,7 +81,7 @@
+         description = null;
+         argName = null;
+         longopt = null;
+-        type = null;
++        type = String.class;
+         required = false;
+         numberOfArgs = Option.UNINITIALIZED;
+         optionalArg = false;

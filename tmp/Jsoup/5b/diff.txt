@@ -1,0 +1,10 @@
+@@ -203,7 +203,8 @@
+         if (key.length() != 0)
+             return Attribute.createFromEncoded(key, value);
+         else {
+-            tq.consume();
++            if (value.length() == 0) // no key, no val; unknown char, keep popping so not get stuck
++                tq.advance();
+                 
+             return null;
+         }

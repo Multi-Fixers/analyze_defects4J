@@ -1,0 +1,35 @@
+@@ -333,7 +333,6 @@
+      */
+     public void close() throws IOException {
+         if (!this.closed) {
+-            this.finish();
+             out.close();
+             this.closed = true;
+         }
+diff -ur /home/kulindu.20/analyze_defects4J/tmp/Compress/4b/buggy/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java /home/kulindu.20/analyze_defects4J/tmp/Compress/4b/fixed/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java
+@@ -123,7 +123,6 @@
+      */
+     public void close() throws IOException {
+         if (!closed) {
+-            finish();
+             buffer.close();
+             out.close();
+             closed = true;
+diff -ur /home/kulindu.20/analyze_defects4J/tmp/Compress/4b/buggy/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java /home/kulindu.20/analyze_defects4J/tmp/Compress/4b/fixed/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java
+@@ -527,7 +527,6 @@
+      * @exception  IOException  if an I/O error occurs.
+      */
+     public void close() throws IOException {
+-        finish();
+         if (raf != null) {
+             raf.close();
+         }
+diff -ur /home/kulindu.20/analyze_defects4J/tmp/Compress/4b/buggy/src/main/java/org/apache/commons/compress/changes/ChangeSetPerformer.java /home/kulindu.20/analyze_defects4J/tmp/Compress/4b/fixed/src/main/java/org/apache/commons/compress/changes/ChangeSetPerformer.java
+@@ -125,6 +125,7 @@
+                 results.addedFromChangeSet(change.getEntry().getName());
+             }
+         }
++        out.finish();
+         return results;
+     }
+ 

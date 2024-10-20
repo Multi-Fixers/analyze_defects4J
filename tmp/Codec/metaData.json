@@ -1,0 +1,86 @@
+{
+    "16b": {
+        "hunk_count": 1,
+        "buggy_lines": 1
+    },
+    "15b": {
+        "hunk_count": 1,
+        "buggy_lines": 6
+    },
+    "2b": {
+        "hunk_count": 1,
+        "buggy_lines": 1
+    },
+    "17b": {
+        "hunk_count": 1,
+        "buggy_lines": 1
+    },
+    "6b": {
+        "hunk_count": 3,
+        "buggy_lines": 3
+    },
+    "9b": {
+        "hunk_count": 1,
+        "buggy_lines": 1
+    },
+    "12b": {
+        "hunk_count": 2,
+        "buggy_lines": 5
+    },
+    "11b": {
+        "hunk_count": 7,
+        "buggy_lines": 23
+    },
+    "10b": {
+        "hunk_count": 1,
+        "buggy_lines": 1
+    },
+    "3b": {
+        "hunk_count": 1,
+        "buggy_lines": 1
+    },
+    "5b": {
+        "hunk_count": 1,
+        "buggy_lines": 1
+    },
+    "1b": {
+        "hunk_count": 3,
+        "buggy_lines": 3
+    },
+    "14b": {
+        "hunk_count": 5,
+        "buggy_lines": 7
+    },
+    "18b": {
+        "hunk_count": 1,
+        "buggy_lines": 1
+    },
+    "13b": {
+        "hunk_count": 3,
+        "buggy_lines": 3
+    },
+    "4b": {
+        "hunk_count": 1,
+        "buggy_lines": 1
+    },
+    "7b": {
+        "hunk_count": 1,
+        "buggy_lines": 1
+    },
+    "8b": {
+        "hunk_count": 2,
+        "buggy_lines": 7
+    },
+    "summary": {
+        "single_line": 10,
+        "single_hunk_multi_line": 1,
+        "multi_hunk": 7,
+        "1-hunk_1-line": 10,
+        "1-hunk_6-line": 1,
+        "3-hunk_3-line": 3,
+        "2-hunk_5-line": 1,
+        "7-hunk_23-line": 1,
+        "5-hunk_7-line": 1,
+        "2-hunk_7-line": 1
+    }
+}

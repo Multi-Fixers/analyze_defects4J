@@ -1,0 +1,11 @@
+@@ -129,8 +129,9 @@
+         Matcher m = charsetPattern.matcher(contentType);
+         if (m.find()) {
+             String charset = m.group(1).trim();
++            if (Charset.isSupported(charset)) return charset;
+             charset = charset.toUpperCase(Locale.ENGLISH);
+-            return charset;
++            if (Charset.isSupported(charset)) return charset;
+         }
+         return null;
+     }

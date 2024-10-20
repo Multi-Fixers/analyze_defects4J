@@ -1,0 +1,29 @@
+@@ -19,8 +19,8 @@
+ 
+ import java.io.Serializable;
+ import java.util.Collection;
+-import java.util.HashMap;
+ import java.util.Iterator;
++import java.util.LinkedHashMap;
+ import java.util.Map;
+ 
+ /**
+@@ -34,7 +34,7 @@
+     private static final long serialVersionUID = 1L;
+     
+     /** hold the options */
+-    private final Map<String, Option> optionMap = new HashMap<String, Option>();
++    private final Map<String, Option> optionMap = new LinkedHashMap<String, Option>();
+ 
+     /** the name of the selected option */
+     private String selected;
+diff -ur /home/kulindu.20/analyze_defects4J/tmp/Cli/36b/buggy/src/main/java/org/apache/commons/cli/Options.java /home/kulindu.20/analyze_defects4J/tmp/Cli/36b/fixed/src/main/java/org/apache/commons/cli/Options.java
+@@ -57,7 +57,7 @@
+     private final List<Object> requiredOpts = new ArrayList<Object>();
+ 
+     /** a map of the option groups */
+-    private final Map<String, OptionGroup> optionGroups = new java.util.HashMap<String, OptionGroup>();
++    private final Map<String, OptionGroup> optionGroups = new LinkedHashMap<String, OptionGroup>();
+ 
+     /**
+      * Add the specified option group.

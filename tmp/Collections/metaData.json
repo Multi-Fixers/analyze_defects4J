@@ -1,0 +1,25 @@
+{
+    "26b": {
+        "hunk_count": 1,
+        "buggy_lines": 1
+    },
+    "28b": {
+        "hunk_count": 1,
+        "buggy_lines": 1
+    },
+    "27b": {
+        "hunk_count": 1,
+        "buggy_lines": 1
+    },
+    "25b": {
+        "hunk_count": 3,
+        "buggy_lines": 3
+    },
+    "summary": {
+        "single_line": 3,
+        "single_hunk_multi_line": 0,
+        "multi_hunk": 1,
+        "1-hunk_1-line": 3,
+        "3-hunk_3-line": 1
+    }
+}

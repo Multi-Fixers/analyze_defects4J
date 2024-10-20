@@ -1,0 +1,110 @@
+{
+    "2b": {
+        "hunk_count": 4,
+        "buggy_lines": 4
+    },
+    "12b": {
+        "hunk_count": 1,
+        "buggy_lines": 1
+    },
+    "1b": {
+        "hunk_count": 2,
+        "buggy_lines": 2
+    },
+    "6b": {
+        "hunk_count": 1,
+        "buggy_lines": 2
+    },
+    "13b": {
+        "hunk_count": 11,
+        "buggy_lines": 26
+    },
+    "3b": {
+        "hunk_count": 4,
+        "buggy_lines": 4
+    },
+    "18b": {
+        "hunk_count": 4,
+        "buggy_lines": 8
+    },
+    "22b": {
+        "hunk_count": 1,
+        "buggy_lines": 3
+    },
+    "14b": {
+        "hunk_count": 1,
+        "buggy_lines": 3
+    },
+    "5b": {
+        "hunk_count": 1,
+        "buggy_lines": 3
+    },
+    "9b": {
+        "hunk_count": 5,
+        "buggy_lines": 21
+    },
+    "16b": {
+        "hunk_count": 2,
+        "buggy_lines": 3
+    },
+    "21b": {
+        "hunk_count": 1,
+        "buggy_lines": 1
+    },
+    "19b": {
+        "hunk_count": 3,
+        "buggy_lines": 7
+    },
+    "15b": {
+        "hunk_count": 2,
+        "buggy_lines": 4
+    },
+    "10b": {
+        "hunk_count": 1,
+        "buggy_lines": 1
+    },
+    "11b": {
+        "hunk_count": 5,
+        "buggy_lines": 5
+    },
+    "20b": {
+        "hunk_count": 2,
+        "buggy_lines": 2
+    },
+    "17b": {
+        "hunk_count": 5,
+        "buggy_lines": 12
+    },
+    "7b": {
+        "hunk_count": 7,
+        "buggy_lines": 24
+    },
+    "4b": {
+        "hunk_count": 7,
+        "buggy_lines": 27
+    },
+    "8b": {
+        "hunk_count": 1,
+        "buggy_lines": 2
+    },
+    "summary": {
+        "single_line": 3,
+        "single_hunk_multi_line": 5,
+        "multi_hunk": 14,
+        "4-hunk_4-line": 2,
+        "1-hunk_1-line": 3,
+        "2-hunk_2-line": 2,
+        "1-hunk_2-line": 2,
+        "11-hunk_26-line": 1,
+        "4-hunk_8-line": 1,
+        "1-hunk_3-line": 3,
+        "5-hunk_21-line": 1,
+        "2-hunk_3-line": 1,
+        "3-hunk_7-line": 1,
+        "2-hunk_4-line": 1,
+        "5-hunk_5-line": 1,
+        "5-hunk_12-line": 1,
+        "7-hunk_24-line": 1,
+        "7-hunk_27-line": 1
+    }
+}

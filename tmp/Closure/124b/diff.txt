@@ -1,0 +1,10 @@
+@@ -210,7 +210,9 @@
+     }
+     Preconditions.checkArgument(node.isGetProp());
+ 
++    while (node.isGetProp()) {
+       node = node.getFirstChild();
++    }
+     if (node.isName()
+         && isNameAssignedTo(node.getString(), replacement)) {
+       return false;

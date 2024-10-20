@@ -1,0 +1,9 @@
+@@ -35,7 +35,7 @@
+     private static final Map<Character, String> xhtmlByVal;
+     private static final Map<Character, String> baseByVal;
+     private static final Map<Character, String> fullByVal;
+-    private static final Pattern unescapePattern = Pattern.compile("&(#(x|X)?([0-9a-fA-F]+)|[a-zA-Z]+);?");
++    private static final Pattern unescapePattern = Pattern.compile("&(#(x|X)?([0-9a-fA-F]+)|[a-zA-Z]+\\d*);?");
+ 
+     static String escape(String string, Document.OutputSettings out) {
+         return escape(string, out.encoder(), out.escapeMode());

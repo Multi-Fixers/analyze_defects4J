@@ -1,0 +1,19 @@
+@@ -262,11 +262,16 @@
+         int end = -1;
+         int depth = 0;
+         char last = 0;
++        boolean inQuote = false;
+ 
+         do {
+             if (isEmpty()) break;
+             Character c = consume();
+             if (last == 0 || last != ESC) {
++                if (c.equals('\'') || c.equals('"') && c != open)
++                    inQuote = !inQuote;
++                if (inQuote)
++                    continue;
+                 if (c.equals(open)) {
+                     depth++;
+                     if (start == -1)
+Only in /home/kulindu.20/analyze_defects4J/tmp/Jsoup/53b/buggy/src/main/java/org/jsoup/parser: TreeBuilder.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Jsoup/53b/buggy/src/main/java/org/jsoup: select

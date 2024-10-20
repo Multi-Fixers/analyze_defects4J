@@ -1,0 +1,10 @@
+@@ -123,8 +123,8 @@
+     do {
+       Node c = node.getFirstChild();
+       while(c != null) {
+-        traverse(c);
+         Node next = c.getNext();
++        traverse(c);
+         c = next;
+       }
+ 

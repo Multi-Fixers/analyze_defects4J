@@ -1,0 +1,36 @@
+{
+    "3b": {
+        "hunk_count": 1,
+        "buggy_lines": 2
+    },
+    "5b": {
+        "hunk_count": 1,
+        "buggy_lines": 1
+    },
+    "1b": {
+        "hunk_count": 2,
+        "buggy_lines": 6
+    },
+    "2b": {
+        "hunk_count": 4,
+        "buggy_lines": 8
+    },
+    "6b": {
+        "hunk_count": 2,
+        "buggy_lines": 10
+    },
+    "4b": {
+        "hunk_count": 1,
+        "buggy_lines": 2
+    },
+    "summary": {
+        "single_line": 1,
+        "single_hunk_multi_line": 2,
+        "multi_hunk": 3,
+        "1-hunk_2-line": 2,
+        "1-hunk_1-line": 1,
+        "2-hunk_6-line": 1,
+        "4-hunk_8-line": 1,
+        "2-hunk_10-line": 1
+    }
+}

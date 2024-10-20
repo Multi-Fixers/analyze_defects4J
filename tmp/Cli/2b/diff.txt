@@ -1,0 +1,13 @@
+@@ -302,8 +302,9 @@
+             }
+             else
+             {
+-                tokens.add("-" + ch);
++                tokens.add(token);
++                break;
+             }
+         }
+     }
+-}
++}
+\ No newline at end of file

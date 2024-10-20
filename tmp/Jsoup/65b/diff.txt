@@ -1,0 +1,37 @@
+@@ -357,11 +357,11 @@
+     }
+ 
+     void clearStackToTableBodyContext() {
+-        clearStackToContext("tbody", "tfoot", "thead");
++        clearStackToContext("tbody", "tfoot", "thead", "template");
+     }
+ 
+     void clearStackToTableRowContext() {
+-        clearStackToContext("tr");
++        clearStackToContext("tr", "template");
+     }
+ 
+     private void clearStackToContext(String... nodeNames) {
+diff -ur /home/kulindu.20/analyze_defects4J/tmp/Jsoup/65b/buggy/src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java /home/kulindu.20/analyze_defects4J/tmp/Jsoup/65b/fixed/src/main/java/org/jsoup/parser/HtmlTreeBuilderState.java
+@@ -1033,7 +1033,9 @@
+                 case StartTag:
+                     Token.StartTag startTag = t.asStartTag();
+                     String name = startTag.normalName();
+-                    if (name.equals("tr")) {
++                    if (name.equals("template")) {
++                        tb.insert(startTag);
++                    } else if (name.equals("tr")) {
+                         tb.clearStackToTableBodyContext();
+                         tb.insert(startTag);
+                         tb.transition(InRow);
+@@ -1093,7 +1095,9 @@
+                 Token.StartTag startTag = t.asStartTag();
+                 String name = startTag.normalName();
+ 
+-                if (StringUtil.in(name, "th", "td")) {
++                if (name.equals("template")) {
++                    tb.insert(startTag);
++                } else if (StringUtil.in(name, "th", "td")) {
+                     tb.clearStackToTableRowContext();
+                     tb.insert(startTag);
+                     tb.transition(InCell);

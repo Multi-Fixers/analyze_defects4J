@@ -1,0 +1,61 @@
+@@ -252,7 +252,8 @@
+           CheckLevel.OFF);
+     }
+ 
+-    if (options.checkGlobalThisLevel.isOn()) {
++    if (options.checkGlobalThisLevel.isOn() &&
++        !options.disables(DiagnosticGroups.GLOBAL_THIS)) {
+       options.setWarningLevel(
+           DiagnosticGroups.GLOBAL_THIS,
+           options.checkGlobalThisLevel);
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google: debugging
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: AliasStringsTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: AstParallelizerTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: AstValidatorTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: CheckGlobalThisTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: CheckPropertyOrderTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: CheckSideEffectsTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: CoalesceVariableNamesTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: CollapsePropertiesTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: ControlFlowAnalysisTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: CreateSyntheticBlocksTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: DataFlowAnalysisTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: DefaultCodingConventionTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: DevirtualizePrototypeMethodsTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: ExportTestFunctionsTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: FixedPointGraphTraversalTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: FunctionInjectorTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: FunctionRewriterTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: FunctionTypeBuilderTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: GlobalNamespaceTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: GlobalVarReferenceMapTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: InlineFunctionsTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: InlineObjectLiteralsTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: InlineSimpleMethodsTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: JSModuleGraphTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: LinkedFlowScopeTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: NameAnonymousFunctionsTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: NodeIteratorsTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: NodeTraversalTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: OptimizeArgumentsArrayTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: OptimizeParametersTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: PeepholeFoldConstantsTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: PeepholeRemoveDeadCodeTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: PeepholeSimplifyRegExpTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: PhaseOptimizerTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: PureFunctionIdentifierTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: RemoveUnusedNamesTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: RemoveUnusedPrototypePropertiesTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: RenameLabelsTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: RenameLocalVarsTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: RenamePrototypesTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: RenameVarsTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: RhinoErrorReporterTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: ScopedAliasesTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: SemanticReverseAbstractInterpreterTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: ShadowVariablesTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: SideEffectsAnalysisTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: SymbolTableTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: UnfoldCompoundAssignmentsTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: VarCheckTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Closure/59b/buggy/test/com/google/javascript/jscomp: deps

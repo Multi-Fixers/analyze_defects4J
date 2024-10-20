@@ -1,0 +1,62 @@
+@@ -389,6 +389,9 @@
+         if (_currToken == JsonToken.VALUE_STRING) {
+             return getText();
+         }
++        if (_currToken == JsonToken.FIELD_NAME) {
++            return getCurrentName();
++        }
+         return getValueAsString(null);
+     }
+     
+@@ -397,6 +400,9 @@
+         if (_currToken == JsonToken.VALUE_STRING) {
+             return getText();
+         }
++        if (_currToken == JsonToken.FIELD_NAME) {
++            return getCurrentName();
++        }
+         if (_currToken == null || _currToken == JsonToken.VALUE_NULL || !_currToken.isScalarValue()) {
+             return defaultValue;
+         }
+diff -ur /home/kulindu.20/analyze_defects4J/tmp/JacksonCore/9b/buggy/src/main/java/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java /home/kulindu.20/analyze_defects4J/tmp/JacksonCore/9b/fixed/src/main/java/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java
+@@ -250,6 +250,9 @@
+             }
+             return _textBuffer.contentsAsString();
+         }
++        if (_currToken == JsonToken.FIELD_NAME) {
++            return getCurrentName();
++        }
+         return super.getValueAsString(null);
+     }
+     
+@@ -263,6 +266,9 @@
+             }
+             return _textBuffer.contentsAsString();
+         }
++        if (_currToken == JsonToken.FIELD_NAME) {
++            return getCurrentName();
++        }
+         return super.getValueAsString(defValue);
+     }
+ 
+diff -ur /home/kulindu.20/analyze_defects4J/tmp/JacksonCore/9b/buggy/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java /home/kulindu.20/analyze_defects4J/tmp/JacksonCore/9b/fixed/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java
+@@ -302,6 +302,9 @@
+             }
+             return _textBuffer.contentsAsString();
+         }
++        if (_currToken == JsonToken.FIELD_NAME) {
++            return getCurrentName();
++        }
+         return super.getValueAsString(null);
+     }
+     
+@@ -316,6 +319,9 @@
+             }
+             return _textBuffer.contentsAsString();
+         }
++        if (_currToken == JsonToken.FIELD_NAME) {
++            return getCurrentName();
++        }
+         return super.getValueAsString(defValue);
+     }
+ 

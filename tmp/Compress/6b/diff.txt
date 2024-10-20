@@ -1,0 +1,25 @@
+@@ -61,6 +61,7 @@
+      */
+     public ZipArchiveEntry(String name) {
+         super(name);
++        setName(name);
+     }
+ 
+     /**
+@@ -459,11 +460,13 @@
+             return false;
+         }
+         ZipArchiveEntry other = (ZipArchiveEntry) obj;
+-        if (name == null) {
+-            if (other.name != null) {
++        String myName = getName();
++        String otherName = other.getName();
++        if (myName == null) {
++            if (otherName != null) {
+                 return false;
+             }
+-        } else if (!name.equals(other.name)) {
++        } else if (!myName.equals(otherName)) {
+             return false;
+         }
+         return true;
