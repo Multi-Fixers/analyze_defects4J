@@ -1,0 +1,19 @@
+@@ -272,7 +272,7 @@
+ 
+     /** {@inheritDoc} */
+     public boolean isSupportLowerBoundInclusive() {
+-        return true;
++        return false;
+     }
+ 
+     /** {@inheritDoc} */
+diff -ur /home/kulindu.20/analyze_defects4J/tmp/Math/22b/buggy/src/main/java/org/apache/commons/math3/distribution/UniformRealDistribution.java /home/kulindu.20/analyze_defects4J/tmp/Math/22b/fixed/src/main/java/org/apache/commons/math3/distribution/UniformRealDistribution.java
+@@ -181,7 +181,7 @@
+ 
+     /** {@inheritDoc} */
+     public boolean isSupportUpperBoundInclusive() {
+-        return false;
++        return true;
+     }
+ 
+     /**

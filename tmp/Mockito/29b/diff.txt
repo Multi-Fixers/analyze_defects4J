@@ -1,0 +1,19 @@
+@@ -26,7 +26,7 @@
+     public void describeTo(Description description) {
+         description.appendText("same(");
+         appendQuoting(description);
+-        description.appendText(wanted.toString());
++        description.appendText(wanted == null ? "null" : wanted.toString());
+         appendQuoting(description);
+         description.appendText(")");
+     }
+Only in /home/kulindu.20/analyze_defects4J/tmp/Mockito/29b/fixed/test/org/mockito: ArgumentCaptorTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Mockito/29b/fixed/test/org/mockito: MockitoTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Mockito/29b/fixed/test/org/mockito: StateMaster.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Mockito/29b/fixed/test/org/mockito: configuration
+Only in /home/kulindu.20/analyze_defects4J/tmp/Mockito/29b/fixed/test/org/mockito/exceptions: ReporterTest.java
+Only in /home/kulindu.20/analyze_defects4J/tmp/Mockito/29b/fixed/test/org/mockito/exceptions: base
+Only in /home/kulindu.20/analyze_defects4J/tmp/Mockito/29b/fixed/test/org/mockito: internal
+Only in /home/kulindu.20/analyze_defects4J/tmp/Mockito/29b/fixed/test/org/mockito: runners
+Only in /home/kulindu.20/analyze_defects4J/tmp/Mockito/29b/fixed/test/org/mockito: verification
+Only in /home/kulindu.20/analyze_defects4J/tmp/Mockito/29b/fixed: version.properties
