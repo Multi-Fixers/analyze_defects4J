@@ -1,115 +1,141 @@
 {
     "21b": {
         "hunk_count": 3,
-        "buggy_lines": 4
+        "buggy_lines": 4,
+        "type": ["multi"]
     },
     "12b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "13b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "15b": {
         "hunk_count": 2,
-        "buggy_lines": 2
+        "buggy_lines": 2,
+        "type": ["multi"]
     },
     "17b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "9b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "26b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "23b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "19b": {
         "hunk_count": 2,
-        "buggy_lines": 2
+        "buggy_lines": 2,
+        "type": ["evolutionary"]
     },
     "16b": {
         "hunk_count": 2,
-        "buggy_lines": 3
+        "buggy_lines": 3,
+        "type": ["data_dep", "evolutionary"]
     },
     "7b": {
         "hunk_count": 1,
-        "buggy_lines": 2
+        "buggy_lines": 2,
+        "type": ["evolutionary"]
     },
     "18b": {
         "hunk_count": 3,
-        "buggy_lines": 4
+        "buggy_lines": 4,
+        "type": ["multi"]
     },
     "6b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "5b": {
         "hunk_count": 1,
-        "buggy_lines": 2
+        "buggy_lines": 2,
+        "type": ["multi"]
     },
     "25b": {
         "hunk_count": 6,
-        "buggy_lines": 6
+        "buggy_lines": 6,
+        "type": ["evolutionary"]
     },
     "3b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "11b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "22b": {
         "hunk_count": 4,
-        "buggy_lines": 7
+        "buggy_lines": 7,
+        "type": ["multi"]
     },
     "2b": {
         "hunk_count": 2,
-        "buggy_lines": 8
+        "buggy_lines": 8,
+        "type": ["data_dep", "evolutionary"]
     },
     "1b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "14b": {
         "hunk_count": 4,
-        "buggy_lines": 4
+        "buggy_lines": 4,
+        "type": ["evolutionary"]
     },
     "20b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "24b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "10b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "4b": {
-        "hunk_count": 2,
-        "buggy_lines": 2
+        "hunk_count": 1,
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "8b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "summary": {
-        "single_line": 14,
+        "single_line": 15,
         "single_hunk_multi_line": 2,
-        "multi_hunk": 10,
+        "multi_hunk": 9,
         "3-hunk_4-line": 2,
-        "1-hunk_1-line": 14,
-        "2-hunk_2-line": 3,
+        "1-hunk_1-line": 15,
+        "2-hunk_2-line": 2,
         "2-hunk_3-line": 1,
         "1-hunk_2-line": 2,
         "6-hunk_6-line": 1,

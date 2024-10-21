@@ -1,19 +1,23 @@
 {
     "26b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "28b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "27b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "25b": {
         "hunk_count": 3,
-        "buggy_lines": 3
+        "buggy_lines": 3,
+        "type": ["evolutionary"]
     },
     "summary": {
         "single_line": 3,

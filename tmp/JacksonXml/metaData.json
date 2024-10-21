@@ -1,27 +1,33 @@
 {
     "3b": {
         "hunk_count": 1,
-        "buggy_lines": 2
+        "buggy_lines": 2,
+        "type": ["data_dep"]
     },
     "5b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "1b": {
         "hunk_count": 2,
-        "buggy_lines": 6
+        "buggy_lines": 6,
+        "type": ["data_dep"]
     },
     "2b": {
         "hunk_count": 4,
-        "buggy_lines": 8
+        "buggy_lines": 8,
+        "type": ["control_dep", "data_dep"]
     },
     "6b": {
         "hunk_count": 2,
-        "buggy_lines": 10
+        "buggy_lines": 10,
+        "type": ["multi"]
     },
     "4b": {
         "hunk_count": 1,
-        "buggy_lines": 2
+        "buggy_lines": 2,
+        "type": ["data_dep"]
     },
     "summary": {
         "single_line": 1,

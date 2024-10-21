@@ -1,75 +1,93 @@
 {
     "16b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "15b": {
         "hunk_count": 1,
-        "buggy_lines": 6
+        "buggy_lines": 6,
+        "type": ["control_dep", "data_dep"]
     },
     "2b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "17b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "6b": {
         "hunk_count": 3,
-        "buggy_lines": 3
+        "buggy_lines": 3,
+        "type": ["data_dep"]
     },
     "9b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "12b": {
         "hunk_count": 2,
-        "buggy_lines": 5
+        "buggy_lines": 5,
+        "type": ["multi"]
     },
     "11b": {
         "hunk_count": 7,
-        "buggy_lines": 23
+        "buggy_lines": 23,
+        "type": ["control_dep", "data_dep"]
     },
     "10b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "3b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "5b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "1b": {
         "hunk_count": 3,
-        "buggy_lines": 3
+        "buggy_lines": 3,
+        "type": ["evolutionary"]
     },
     "14b": {
         "hunk_count": 5,
-        "buggy_lines": 7
+        "buggy_lines": 7,
+        "type": ["data_dep"]
     },
     "18b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "13b": {
         "hunk_count": 3,
-        "buggy_lines": 3
+        "buggy_lines": 3,
+        "type": ["data_dep"]
     },
     "4b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "7b": {
         "hunk_count": 1,
-        "buggy_lines": 1
+        "buggy_lines": 1,
+        "type": ["single"]
     },
     "8b": {
         "hunk_count": 2,
-        "buggy_lines": 7
+        "buggy_lines": 7,
+        "type": ["control_dep, data_dep"]
     },
     "summary": {
         "single_line": 10,

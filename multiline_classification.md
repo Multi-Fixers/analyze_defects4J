@@ -16,6 +16,12 @@
 4. **Closing Bracket Addition**: 
    - If the line only contains `}`, it should not be counted, as it does not represent a logical bug fix.
 
+5. **Adding import statements**:
+   - Adding import statements related to changed line also considered as a single line bug.
+
+6. **Additions separated by comments or empty lines**:
+ - Line additions separated by comments or empty lines also considered as single line bugs.
+
 ## Potential Issues in the Logic
 - **Context Awareness**: 
   - Ensure the logic handles cases where lines may have context or impact on adjacent lines. For example, if lines are only closing a block but should have contained logic.
