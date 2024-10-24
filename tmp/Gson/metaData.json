@@ -90,13 +90,13 @@
         "type": ["control_dep","data_dep","evolutionary"]
     },
     "summary": {
-        "single_line": 5,
-        "single_hunk_multi_line": 6,
-        "multi_hunk": 7,
+        "single_line": 10,
+        "single_hunk_multi_line": 2,
+        "multi_hunk": 6,
         "2-hunk_7-line": 1,
-        "1-hunk_2-line": 6,
-        "2-hunk_2-line": 3,
-        "1-hunk_1-line": 5,
+        "1-hunk_2-line": 2,
+        "2-hunk_2-line": 2,
+        "1-hunk_1-line": 10,
         "3-hunk_5-line": 1,
         "5-hunk_5-line": 1,
         "12-hunk_16-line": 1
