@@ -2,132 +2,186 @@
     "21b": {
         "hunk_count": 3,
         "buggy_lines": 4,
-        "type": ["multi"]
+        "type": [
+            "multi"
+        ]
     },
     "12b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "13b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "15b": {
         "hunk_count": 2,
         "buggy_lines": 2,
-        "type": ["multi"]
+        "type": [
+            "multi"
+        ]
     },
     "17b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "9b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "26b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "23b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "19b": {
         "hunk_count": 2,
         "buggy_lines": 2,
-        "type": ["evolutionary"]
+        "type": [
+            "evolutionary"
+        ]
     },
     "16b": {
         "hunk_count": 2,
         "buggy_lines": 3,
-        "type": ["data_dep", "evolutionary"]
+        "type": [
+            "data_dep",
+            "evolutionary"
+        ]
     },
     "7b": {
         "hunk_count": 1,
         "buggy_lines": 2,
-        "type": ["evolutionary"]
+        "type": [
+            "evolutionary"
+        ]
     },
     "18b": {
         "hunk_count": 3,
         "buggy_lines": 4,
-        "type": ["multi"]
+        "type": [
+            "multi"
+        ]
     },
     "6b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "5b": {
         "hunk_count": 1,
         "buggy_lines": 2,
-        "type": ["multi"]
+        "type": [
+            "multi"
+        ]
     },
     "25b": {
         "hunk_count": 6,
         "buggy_lines": 6,
-        "type": ["evolutionary"]
+        "type": [
+            "evolutionary"
+        ]
     },
     "3b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "11b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "22b": {
         "hunk_count": 4,
         "buggy_lines": 7,
-        "type": ["multi"]
+        "type": [
+            "multi"
+        ]
     },
     "2b": {
         "hunk_count": 2,
         "buggy_lines": 8,
-        "type": ["data_dep", "evolutionary"]
+        "type": [
+            "data_dep",
+            "evolutionary"
+        ]
     },
     "1b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "14b": {
         "hunk_count": 4,
         "buggy_lines": 4,
-        "type": ["evolutionary"]
+        "type": [
+            "evolutionary"
+        ]
     },
     "20b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "24b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "10b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "4b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "8b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "summary": {
         "single_line": 15,
@@ -142,5 +196,13 @@
         "4-hunk_7-line": 1,
         "2-hunk_8-line": 1,
         "4-hunk_4-line": 1
+    },
+    "classification": {
+        "control_dep": 0,
+        "data_dep": 2,
+        "evolutionary": 6,
+        "single": 15,
+        "multi": 5,
+        "total": 28
     }
 }

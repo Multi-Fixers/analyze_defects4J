@@ -2,92 +2,131 @@
     "16b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "15b": {
         "hunk_count": 1,
         "buggy_lines": 6,
-        "type": ["control_dep", "data_dep"]
+        "type": [
+            "control_dep",
+            "data_dep"
+        ]
     },
     "2b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "17b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "6b": {
         "hunk_count": 3,
         "buggy_lines": 3,
-        "type": ["data_dep"]
+        "type": [
+            "data_dep"
+        ]
     },
     "9b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "12b": {
         "hunk_count": 2,
         "buggy_lines": 5,
-        "type": ["multi"]
+        "type": [
+            "multi"
+        ]
     },
     "11b": {
         "hunk_count": 7,
         "buggy_lines": 23,
-        "type": ["control_dep", "data_dep"]
+        "type": [
+            "control_dep",
+            "data_dep"
+        ]
     },
     "10b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "3b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "5b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "1b": {
         "hunk_count": 3,
         "buggy_lines": 3,
-        "type": ["evolutionary"]
+        "type": [
+            "evolutionary"
+        ]
     },
     "14b": {
         "hunk_count": 5,
         "buggy_lines": 7,
-        "type": ["data_dep"]
+        "type": [
+            "data_dep"
+        ]
     },
     "18b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "13b": {
         "hunk_count": 3,
         "buggy_lines": 3,
-        "type": ["data_dep"]
+        "type": [
+            "data_dep"
+        ]
     },
     "4b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "7b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "8b": {
         "hunk_count": 2,
         "buggy_lines": 7,
-        "type": ["control_dep, data_dep"]
+        "type": [
+            "control_dep",
+            "data_dep"
+        ]
     },
     "summary": {
         "single_line": 10,
@@ -100,5 +139,13 @@
         "7-hunk_23-line": 1,
         "5-hunk_7-line": 1,
         "2-hunk_7-line": 1
+    },
+    "classification": {
+        "control_dep": 3,
+        "data_dep": 6,
+        "evolutionary": 1,
+        "single": 10,
+        "multi": 1,
+        "total": 21
     }
 }

@@ -1,0 +1,10 @@
+{
+    "classification_summary": {
+        "control_dep": 2,
+        "data_dep": 3,
+        "evolutionary": 5,
+        "multi": 1,
+        "single": 10,
+        "total": 21
+    }
+}

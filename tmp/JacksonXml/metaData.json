@@ -2,32 +2,45 @@
     "3b": {
         "hunk_count": 1,
         "buggy_lines": 2,
-        "type": ["data_dep"]
+        "type": [
+            "data_dep"
+        ]
     },
     "5b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "1b": {
         "hunk_count": 2,
         "buggy_lines": 6,
-        "type": ["data_dep"]
+        "type": [
+            "data_dep"
+        ]
     },
     "2b": {
         "hunk_count": 4,
         "buggy_lines": 8,
-        "type": ["control_dep", "data_dep"]
+        "type": [
+            "control_dep",
+            "data_dep"
+        ]
     },
     "6b": {
         "hunk_count": 2,
         "buggy_lines": 10,
-        "type": ["multi"]
+        "type": [
+            "multi"
+        ]
     },
     "4b": {
         "hunk_count": 1,
         "buggy_lines": 2,
-        "type": ["data_dep"]
+        "type": [
+            "data_dep"
+        ]
     },
     "summary": {
         "single_line": 1,
@@ -38,5 +51,13 @@
         "2-hunk_6-line": 1,
         "4-hunk_8-line": 1,
         "2-hunk_10-line": 1
+    },
+    "classification": {
+        "control_dep": 1,
+        "data_dep": 4,
+        "evolutionary": 0,
+        "single": 1,
+        "multi": 1,
+        "total": 7
     }
 }

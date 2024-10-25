@@ -2,112 +2,165 @@
     "2b": {
         "hunk_count": 4,
         "buggy_lines": 4,
-        "type": ["multi"]
+        "type": [
+            "multi"
+        ]
     },
     "12b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "1b": {
         "hunk_count": 2,
         "buggy_lines": 2,
-        "type": ["multi"]
+        "type": [
+            "multi"
+        ]
     },
     "6b": {
         "hunk_count": 1,
         "buggy_lines": 2,
-        "type": ["evolutionary"]
+        "type": [
+            "evolutionary"
+        ]
     },
     "13b": {
         "hunk_count": 11,
         "buggy_lines": 26,
-        "type": ["control_dep", "data_dep", "evolutionary"]
+        "type": [
+            "control_dep",
+            "data_dep",
+            "evolutionary"
+        ]
     },
     "3b": {
         "hunk_count": 4,
         "buggy_lines": 4,
-        "type": ["data_dep","evolutionary"]
+        "type": [
+            "data_dep",
+            "evolutionary"
+        ]
     },
     "18b": {
         "hunk_count": 4,
         "buggy_lines": 8,
-        "type": ["data_dep"]
+        "type": [
+            "data_dep"
+        ]
     },
     "22b": {
         "hunk_count": 1,
         "buggy_lines": 3,
-        "type": ["data_dep"]
+        "type": [
+            "data_dep"
+        ]
     },
     "14b": {
         "hunk_count": 1,
         "buggy_lines": 3,
-        "type": ["evolutionary"]
+        "type": [
+            "evolutionary"
+        ]
     },
     "5b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "9b": {
         "hunk_count": 5,
         "buggy_lines": 21,
-        "type": ["control_dep","data_dep"]
+        "type": [
+            "control_dep",
+            "data_dep"
+        ]
     },
     "16b": {
         "hunk_count": 2,
         "buggy_lines": 3,
-        "type": ["multi"]
+        "type": [
+            "multi"
+        ]
     },
     "21b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "19b": {
         "hunk_count": 3,
         "buggy_lines": 7,
-        "type": ["control_dep","data_dep"]
+        "type": [
+            "control_dep",
+            "data_dep"
+        ]
     },
     "15b": {
         "hunk_count": 2,
         "buggy_lines": 4,
-        "type": ["data_dep"]
+        "type": [
+            "data_dep"
+        ]
     },
     "10b": {
         "hunk_count": 1,
         "buggy_lines": 1,
-        "type": ["single"]
+        "type": [
+            "single"
+        ]
     },
     "11b": {
         "hunk_count": 5,
         "buggy_lines": 5,
-        "type": ["multi"]
+        "type": [
+            "multi"
+        ]
     },
     "20b": {
         "hunk_count": 2,
         "buggy_lines": 2,
-        "type": ["data_dep"]
+        "type": [
+            "data_dep"
+        ]
     },
     "17b": {
         "hunk_count": 5,
         "buggy_lines": 12,
-        "type": ["control_dep","data_dep"]
+        "type": [
+            "control_dep",
+            "data_dep"
+        ]
     },
     "7b": {
         "hunk_count": 7,
         "buggy_lines": 24,
-        "type": ["data_dep","evolutionary"]
+        "type": [
+            "data_dep",
+            "evolutionary"
+        ]
     },
     "4b": {
         "hunk_count": 7,
         "buggy_lines": 27,
-        "type": ["control_dep", "data_dep", "evolutionary"]
+        "type": [
+            "control_dep",
+            "data_dep",
+            "evolutionary"
+        ]
     },
     "8b": {
         "hunk_count": 1,
         "buggy_lines": 2,
-        "type": ["evolutionary"]
+        "type": [
+            "evolutionary"
+        ]
     },
     "summary": {
         "single_line": 4,
@@ -128,5 +181,13 @@
         "5-hunk_12-line": 1,
         "7-hunk_24-line": 1,
         "7-hunk_27-line": 1
+    },
+    "classification": {
+        "control_dep": 5,
+        "data_dep": 11,
+        "evolutionary": 7,
+        "single": 4,
+        "multi": 4,
+        "total": 31
     }
 }

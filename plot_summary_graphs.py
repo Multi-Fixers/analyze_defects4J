@@ -9,7 +9,7 @@ def draw_project_graph(project_name, metaData, project_dir):
     hunk_counts = []
 
     for bug_id, data in metaData.items():
-        if bug_id != "summary":
+        if bug_id not in ("summary", "classification"):
             bug_ids.append(bug_id)
             buggy_lines.append(data["buggy_lines"])
             hunk_counts.append(data["hunk_count"])
@@ -67,37 +67,41 @@ def draw_summary_graph(project_summaries, base_dir):
     plt.tight_layout()
 
     # Save the summary graph in the base directory
-    output_path = os.path.join(base_dir, 'summary_bug_analysis.png')
+    output_path = os.path.join(base_dir, 'summary_projects.png')
     plt.savefig(output_path)
     plt.close()
 
-def draw_classification_graph(classification_summary, base_dir):
-    classifications = list(classification_summary.keys())
-    counts = list(classification_summary.values())
+def draw_analyzed_graph(analyzed_summary, base_dir):
+    analyzation = list(analyzed_summary.keys())
+    counts = list(analyzed_summary.values())
 
     # Create classification graph (horizontal bars)
-    plt.figure(figsize=(10, 10))  # Increase the figure height for more spacing
-    bars = plt.barh(classifications, counts, color='purple', height=0.5)  # Increase bar height for more space
+    plt.figure(figsize=(12, 16))  # Set figure size
+    bars = plt.barh(analyzation, counts, color='purple', height=0.5)
 
-    plt.xlabel('Count')
-    plt.ylabel('Classification')
-    plt.title('Classification of Bugs Across All Projects')
-    
-    # Increase space between rows by adjusting y-axis limits
-    plt.ylim(-1, len(classifications))  # Adjust y-limits for even more space
+    plt.xlabel('Bug Count')
+    plt.ylabel('Hunk and Line Count')
+    plt.title('Analyzation of Bugs Across All Projects')
+
+    # Remove extra space before the first row and after the last row
+    plt.ylim(-0.5, len(analyzation) - 0.5)  # Adjust y-limits to remove the space
+
+    # Rotate y-axis labels and reduce font size to avoid overlapping
+    plt.yticks(ticks=range(len(analyzation)), labels=analyzation, va='center_baseline', fontsize=8, rotation=0)
 
     # Optionally, add padding to the bars for better visibility
     for bar in bars:
         bar.set_edgecolor('black')  # Add edges to bars for better visibility
         bar.set_linewidth(1)
 
-    plt.tight_layout()
+    # Apply tight layout for better space management
+    plt.tight_layout(pad=2.0)
 
     # Save the classification graph in the base directory
-    output_path = os.path.join(base_dir, 'classification_summary.png')
+    output_path = os.path.join(base_dir, 'analyzed_summary.png')
     plt.savefig(output_path)
     plt.close()
-
+    
 def main(base_dir):
     # Dictionary to hold the overall summary across projects
     overall_summary = {
@@ -107,13 +111,14 @@ def main(base_dir):
     }
     
     # Dictionary to hold the classification counts across all projects
-    classification_summary = {}
+    analyzed_summary = {}
 
     # Dictionary to hold project-specific summaries
     project_summaries = {}
 
     # Traverse through each project directory
-    for project in os.listdir(base_dir):
+    projects = [f for f in os.listdir(base_dir) if os.path.isdir(os.path.join(base_dir, f))]
+    for project in projects:
         project_dir = os.path.join(base_dir, project)
         meta_file = os.path.join(project_dir, "metaData.json")
         
@@ -142,22 +147,22 @@ def main(base_dir):
         # Update classification summary
         for classification, count in summary.items():
             if "-" in classification:  # classification like "1-hunk_1-line"
-                if classification not in classification_summary:
-                    classification_summary[classification] = 0
-                classification_summary[classification] += count
+                if classification not in analyzed_summary:
+                    analyzed_summary[classification] = 0
+                analyzed_summary[classification] += count
 
     # Draw summary graph across projects in base directory
     draw_summary_graph(project_summaries, base_dir)
 
     # Draw classification graph in base directory
-    draw_classification_graph(classification_summary, base_dir)
+    draw_analyzed_graph(analyzed_summary, base_dir)
 
     # Save the overall summary to a JSON file in base directory
     output_summary_file = os.path.join(base_dir, "overall_summary.json")
     with open(output_summary_file, 'w') as f:
         json.dump({
             "overall_summary": overall_summary,
-            "classification_summary": classification_summary
+            "analyzed_summary": analyzed_summary
         }, f, indent=4)
 
 if __name__ == "__main__":
