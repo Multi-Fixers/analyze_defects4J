@@ -1,0 +1,13 @@
+{
+    "1b": "single_file-multi_line",
+    "2b": "single_file-multi_line",
+    "3b": "single_file-multi_line",
+    "4b": "single_file-multi_line",
+    "5b": "single_line",
+    "6b": "single_file-multi_line",
+    "summary": {
+        "single_line_bugs": 1,
+        "single_file_multi_line_bugs": 5,
+        "multi_file_bugs": 0
+    }
+}

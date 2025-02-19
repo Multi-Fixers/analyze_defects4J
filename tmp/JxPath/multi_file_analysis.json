@@ -1,0 +1,29 @@
+{
+    "1b": "multi_file",
+    "2b": "single_file-multi_line",
+    "3b": "single_file-multi_line",
+    "4b": "multi_file",
+    "5b": "single_line",
+    "6b": "single_file-multi_line",
+    "7b": "multi_file",
+    "8b": "single_file-multi_line",
+    "9b": "multi_file",
+    "10b": "single_line",
+    "11b": "multi_file",
+    "12b": "single_line",
+    "13b": "multi_file",
+    "14b": "single_file-multi_line",
+    "15b": "single_file-multi_line",
+    "16b": "multi_file",
+    "17b": "multi_file",
+    "18b": "single_file-multi_line",
+    "19b": "multi_file",
+    "20b": "single_file-multi_line",
+    "21b": "single_line",
+    "22b": "single_file-multi_line",
+    "summary": {
+        "single_line_bugs": 4,
+        "single_file_multi_line_bugs": 9,
+        "multi_file_bugs": 9
+    }
+}
